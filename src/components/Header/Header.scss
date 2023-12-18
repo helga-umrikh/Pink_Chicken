@@ -1,0 +1,43 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 4.56rem;
+
+    &__logo {
+        margin-bottom: 6px;
+        cursor: pointer;
+    }
+
+    &__logo:hover {
+
+    }
+
+    &__menu {
+        display: flex;
+        flex-direction: row;
+
+        &_item {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+        }
+
+        &_btn {
+            margin-right: 0.5rem;
+            padding: 0.5em;
+        }
+
+        &_sub {
+            margin: 0 1.625em 0.6em 0;
+        }
+
+        &_settings-login-btn {
+            width: 5.75rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}
