@@ -5,39 +5,107 @@
     justify-content: space-between;
     height: 4.56rem;
 
+    @media (max-width: 767px) {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 100%;
+        padding: 1.75em 1.25em 0;
+        background-color: #fff;
+    }
+
     &__logo {
         margin-bottom: 6px;
         cursor: pointer;
-    }
 
-    &__logo:hover {
+        @media (max-width: 767px) {
+            width: 48%;
+            max-width: 200px;
+            margin-bottom: 1.25em;
+        }
 
+        &_item {
+            width: 100%;
+        }
     }
 
     &__menu {
         display: flex;
         flex-direction: row;
 
+        @media (max-width: 767px) {
+            width: 100%;
+            justify-content: space-between;
+            margin-bottom: 1.25em;
+        }
+
         &_item {
             display: flex;
             flex-direction: row;
             align-items: flex-end;
+
+            @media (max-width: 767px) {
+                margin-bottom: 6px;
+            }
         }
 
         &_btn {
             margin-right: 0.5rem;
             padding: 0.5em;
+
+            @media (max-width: 767px) {
+                display: none;
+            }
         }
 
         &_sub {
             margin: 0 1.625em 0.6em 0;
+
+            @media (max-width: 767px) {
+                margin: 0;
+            }
+        }
+
+        &_sub-add {
+            display: none;
+            @media (max-width: 767px) {
+                display: block;
+            }
+        }
+
+        &_percentage-sub {
+            display: flex;
+            flex-direction: row;
+
+            @media (max-width: 767px) {
+                flex-direction: column-reverse;
+            }
         }
 
         &_settings-login-btn {
             width: 5.75rem;
             display: flex;
             flex-direction: row;
+            align-items: center;
             justify-content: space-between;
+        }
+    }
+
+    &__media-buttons {
+        display: none;
+
+        @media (max-width: 767px) {
+            min-width: 12.9em;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &_media-plans:focus {
+            border: 1px solid #ee26c2;
+        }
+
+        &_report:focus {
+            border: 1px solid #2676ee;
         }
     }
 }
