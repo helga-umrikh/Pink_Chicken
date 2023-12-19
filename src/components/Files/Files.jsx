@@ -6,12 +6,15 @@ const Files = () => {
     return (
         <div className="files">
             <p className=" files__title typogr_title">Файлы</p>
-            <div className='files__image'>
-                <img src={files} alt="image of files" />
+            <div className='files__start-content'>
+                <div className="files__image">
+                    <img src={files} alt="image of files" />
+                </div>
+                <p className="typogr_descr">
+                    Закажи у личного помощника медиаплан. Он появится в этом
+                    разделе
+                </p>
             </div>
-            <p className='typogr_descr'>
-                Закажи у личного помощника медиаплан. Он появится в этом разделе
-            </p>
         </div>
     )
 }
