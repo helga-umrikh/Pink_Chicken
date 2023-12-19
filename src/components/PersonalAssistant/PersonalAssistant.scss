@@ -1,8 +1,51 @@
 .pers-assistant {
-  width: 72%;
-  height: inherit;
-  border-radius: 20px;
-  background: #fff;
-  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.08);
-  padding:  1.75em  1.25em 0;
+    width: 72%;
+    height: inherit;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.08);
+    padding: 1.75em 1.25em 0;
+
+    &__header {
+      display: flex;
+      flex-direction: row;
+
+        &_info {
+          flex: 1;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+
+    &__acc-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__user-name {
+        margin-right: 1em;
+    }
+
+    &__drop-down-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 1.625em;
+        border-radius: 21px;
+
+        &_container {
+            padding: 8px 17px;
+        }
+
+        &_dots {
+            width: 6px;
+            height: 6px;
+            border-radius: 5px;
+            background-color: #000;
+            margin-bottom: 2px;
+        }
+    }
 }
