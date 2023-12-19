@@ -1,6 +1,59 @@
 .footer {
-    &____container {
+    background-color: #ebebeb;
+    height: 6rem;
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         width: 1200px;
+        height: inherit;
         margin: 0 auto;
+    }
+
+    @media (max-width: 767px) {
+        background-color: #ffffff;
+    }
+
+    &__logo {
+    }
+
+    &__policy-contacts {
+        display: flex;
+
+        &_policy {
+            margin-right: 4em;
+        }
+
+        &_mail {
+            display: flex;
+        }
+
+        &_mail-icon {
+            margin-right: 0.75em;
+        }
+    }
+
+    &__lang-bar {
+        display: flex;
+        flex-direction: row;
+        &_item {
+            margin-right: 0.75em;
+        }
+    }
+
+    &__social {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 92px;
+
+        &_whatsapp {
+            padding: 0.438em;
+            border-radius: 50%;
+            background-color: #20b038;
+        }
     }
 }

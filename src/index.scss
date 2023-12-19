@@ -137,6 +137,14 @@ body {
             }
         }
     }
+
+    &_transparent {
+        color: #000;
+
+        &:focus {
+            color: #ee26c2;
+        }
+    }
 }
 
 .typogr {
@@ -190,4 +198,5 @@ body {
         font-weight: 500;
         line-height: 145%;
     }
+
 }
