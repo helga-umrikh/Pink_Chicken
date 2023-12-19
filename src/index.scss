@@ -56,17 +56,16 @@ body {
     }
 }
 
+#root {
+    height: 100vh;
+}
+
 .App {
     margin: 0 auto;
-    max-width: 1200px;
-
-    @media (max-width: 1439px) and (min-width: 768px) {
-        max-width: 688px;
-    }
-
-    @media (max-width: 767px) {
-        width: 100%;
-    }
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -139,7 +138,6 @@ body {
         }
     }
 }
-
 
 .typogr {
     &_title,
